@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
+
+/*
+    Paleta de cores
+    Celadon: B8D8BA
+    Lightt Orange: FCDDBC
+*/
+
+:root {
+    --cor1: #B8D8BA;
+    --cor2: #FCDDBC;
+}
+
+* {
+    font-family: "Istok Web", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459);
+    overflow: hidden;
+
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
+}
+
+#imagem {
+    display: block;
+    background: url(../imagens/building.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+form {
+    text-align: center;
+}
+
+form > div {
+    background-color: var(--cor2);
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.preencher {
+    background-color: var(--cor2);
+    width: 100%;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #738875;
+}
+
+form > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #88a08a;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+form > a:hover {
+    background-color: var(--cor1);
+}
+
+form > a.botao > span {
+    color: #738875;
+    font-size: 0.9em;
+}
+
+/* 
+    centralizar ícones 
+    ajustar espaçamento
+*/
