@@ -39,7 +39,6 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: white;
     width: 250px;
@@ -48,6 +47,7 @@ section {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.459);
     overflow: hidden;
 
+    transform: translate(-50%, -50%);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
 }
@@ -76,22 +76,37 @@ section {
     font-size: 0.9em;
 }
 
-form {
-    text-align: center;
-}
-
-form > div {
+/* ↓ */
+div.preencher {
+    display: flex; 
+    align-items: center; 
     background-color: var(--cor2);
-    border-radius: 5px;
-    width: 90%;
+    width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
-.preencher {
-    background-color: var(--cor2);
-    width: 100%;
+div.preencher > span {
+    color: #424e44;
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.preencher > input {
+    background-color: rgba(205, 238, 207, 0.863);
+    font-size: 1em;
+    flex: 1; 
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: 79%;
+    height: 97.6%;
+}
+/* ⭡ */
+
+div.preencher > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
@@ -100,7 +115,7 @@ form > input[type=submit] {
     width: 100%;
     height: 40px;
     background-color: var(--cor1);
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -132,8 +147,3 @@ form > a.botao > span {
     color: #738875;
     font-size: 0.9em;
 }
-
-/* 
-    centralizar ícones 
-    ajustar espaçamento
-*/

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
     body {
         background-image: linear-gradient(to  bottom, var(--cor1), var(--cor2));
     }
@@ -26,7 +26,7 @@
     } 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* TELAS GRANDES */
     body {
         background-image: linear-gradient(to  bottom, var(--cor1), var(--cor2));
     }
